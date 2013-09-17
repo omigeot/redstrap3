@@ -3409,7 +3409,7 @@ margin: 20px;
         cursor: pointer;
 }
 
-.dropdown-menu > li > a > img {
+.dropdown-menu >  li > a > img {
 	width: 48px;
 	height: 48px;
 }
@@ -3455,7 +3455,17 @@ span.notif-when {
 	margin: 0 0 0 0;
 }
 
-.navbar-header dropdown-menu {
+/* .navbar-header dropdown-menu {
 	background-color: white;
 }
 
+ul#nav-network-menu {
+	background: white;
+}
+
+
+
+.navbar-header .menu-popup a {
+	color: black;
+	font-weight: normal;
+} */
