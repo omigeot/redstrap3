@@ -35,8 +35,8 @@
 
 		
 	{{if $nav.network}}
-		<li id="nav-network-link" class="btn nav-menu2 {{$sel.network}}">
-                        <a href="{{$nav.network.0}}"><span class="icon-group" data-toggle="tooltip" title="{{$nav.network.1}}">{{$nav.network.1}}</span></a><span id="net-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-network-menu"></span>
+		<li id="nav-network-link">
+                        <a href="{{$nav.network.0}}" class="btn {{$sel.network}}"><span class="icon-group" data-toggle="tooltip" title="{{$nav.network.1}}">{{$nav.network.1}}</span></a><span id="net-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-network-menu"></span>
 
 <!--			<a class="{{$nav.network.2}}" href="{{$nav.network.0}}" title="{{$nav.network.3}}" >{{$nav.network.1}}</a>
 			<span id="net-update" class="nav-notify fakelink" rel="#nav-network-menu"></span> -->
@@ -49,8 +49,8 @@
 	{{/if}}
 
 	{{if $nav.home}}
-		<li id="nav-home-link" class="btn nav-menu2 {{$sel.home}}">
-			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
+		<li id="nav-home-link">
+			<a class="{{$nav.home.2}} btn {{$sel.home}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
 			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span>
 			<ul id="nav-home-menu" class="menu-popup notify-menus" rel="home">
 				<li id="nav-home-see-all"><a href="{{$nav.home.all.0}}">{{$nav.home.all.1}}</a></li>
@@ -64,7 +64,7 @@
 
 
 	{{if $nav.messages}}
-		<li id="nav-mail-link" class="btn nav-menu2 {{$sel.messages}}">
+		<li id="nav-mail-link" class="btn {{$sel.messages}}">
 			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
 			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span>
 			<ul id="nav-messages-menu" class="menu-popup notify-menus" rel="messages">
@@ -123,6 +123,7 @@
 		</li>
 	{{/if}}
 
+
 	{{if $nav.help}} 
 		<li id="nav-help-link" class="btn navbar-right nav-menu2 {{$sel.help}}">
 			<a class="{{$nav.help.2}}" target="friendika-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a>
@@ -146,6 +147,7 @@
 			</form>
 		</li>
 		<div id="nav-search-spinner"></div>
+
 
 	</ul>
 </nav>
