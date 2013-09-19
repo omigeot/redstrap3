@@ -1421,9 +1421,9 @@ tr.mceLast {
 }
 
 .wall-item-photo, .photo, .contact-block-img, .my-comment-photo {
-    border-radius: $radiuspx;
+ /*   border-radius: $radiuspx;
     -moz-border-radius: $radiuspx;
-    box-shadow: 4px 4px 3px 0 #444444;
+    box-shadow: 4px 4px 3px 0 #444444;*/
 }
 
 
@@ -2940,6 +2940,12 @@ nav ul li .menu-popup {
 	margin-left: 5px;
 }
 
+#nav-user-linkmenu > a > img {
+	height: 50px;
+	width: 50px;
+}
+
+
 nav .nav-menu-icon {
   position: relative;
   height: 22px;
@@ -3398,15 +3404,21 @@ margin: 20px;
 }
 .notify-badge {
         position:relative;
-        top: -40px;
-        left: 8px;
-        font-size: 10px;
+        top: -45px;
+        left: 9px;
+        font-size: 9px;
         display: inline;
         padding-top: 2px;
         padding-bottom: 2px;
         padding-left: 4px;
         padding-right: 4px;
         cursor: pointer;
+	min-width: 30px;
+	width:30px;
+}
+
+.notify-badge.show {
+	display: inline !important;
 }
 
 .dropdown-menu >  li > a > img {
@@ -3428,8 +3440,9 @@ span.notif-when {
 }
 
 .navbar {
-	border-radius: 0; 
-	height: 48px;
+/*	border-radius: 0; */
+	height: 50px;
+	min-height: 52px;
 }
 
 .navbar-header {

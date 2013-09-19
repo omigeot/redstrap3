@@ -33,10 +33,11 @@
 		</li>
 	{{/if}}
 
+<li><ul class="nav navbar-nav"> <!-- sub nav bar -->
 		
 	{{if $nav.network}}
-		<li id="nav-network-link">
-                        <a href="{{$nav.network.0}}" class="btn {{$sel.network}}"><span class="icon-group" data-toggle="tooltip" title="{{$nav.network.1}}">{{$nav.network.1}}</span></a><span id="net-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-network-menu"></span>
+		<li id="nav-network-link" class="{{$sel.network}}">
+                        <a href="{{$nav.network.0}}"><span class="icon-group" data-toggle="tooltip" title="{{$nav.network.1}}">{{$nav.network.1}}</span></a><span id="net-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-network-menu"></span>
 
 <!--			<a class="{{$nav.network.2}}" href="{{$nav.network.0}}" title="{{$nav.network.3}}" >{{$nav.network.1}}</a>
 			<span id="net-update" class="nav-notify fakelink" rel="#nav-network-menu"></span> -->
@@ -49,8 +50,8 @@
 	{{/if}}
 
 	{{if $nav.home}}
-		<li id="nav-home-link">
-			<a class="{{$nav.home.2}} btn {{$sel.home}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
+		<li id="nav-home-link" class="{{$sel.home}}">
+			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
 			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span>
 			<ul id="nav-home-menu" class="menu-popup notify-menus" rel="home">
 				<li id="nav-home-see-all"><a href="{{$nav.home.all.0}}">{{$nav.home.all.1}}</a></li>
@@ -64,7 +65,7 @@
 
 
 	{{if $nav.messages}}
-		<li id="nav-mail-link" class="btn {{$sel.messages}}">
+		<li id="nav-mail-link" class="{{$sel.messages}}">
 			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
 			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span>
 			<ul id="nav-messages-menu" class="menu-popup notify-menus" rel="messages">
@@ -76,7 +77,7 @@
 	{{/if}}
 
 	{{if $nav.all_events}}
-		<li id="nav-all_events-link" class="btn nav-menu2 {{$sel.all_events}}">
+		<li id="nav-all_events-link" class="nav-menu2 {{$sel.all_events}}">
                         <a href="{{$nav.all_events.0}}"><span class="icon-calendar" data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
 <!--			<a class="{{$nav.all_events.2}}" href="{{$nav.all_events.0}}" title="{{$nav.all_events.3}}" >{{$nav.all_events.1}}</a>
 			<span id="all_events-update" class="nav-notify fakelink" rel="#nav-all_events-menu"></span> -->
@@ -89,7 +90,7 @@
 	{{/if}}
 
 	{{if $nav.intros}}
-		<li id="nav-intros-link" class="btn nav-menu2 {{$sel.intros}}">
+		<li id="nav-intros-link" class="nav-menu2 {{$sel.intros}}">
 			<a class="{{$nav.intros.2}}" href="{{$nav.intros.0}}" title="{{$nav.intros.3}}" >{{$nav.intros.1}}</a>
 			<span id="intro-update" class="nav-notify fakelink" rel="#nav-intros-menu"></span>
 			<ul id="nav-intros-menu" class="menu-popup notify-menus" rel="intros">
@@ -100,7 +101,7 @@
 	{{/if}}
 		
 	{{if $nav.notifications}}
-		<li id="nav-notify-linkmenu" class="btn nav-menu2 fakelink {{$sel.notifications}}">
+		<li id="nav-notify-linkmenu" class="nav-menu2 fakelink {{$sel.notifications}}">
                         <a href="{{$nav.notifications.0}}"><span class="icon-bell-alt" data-toggle="tooltip" title="{{$nav.notifications.1}}">{{$nav.notifications.1}}</span></a><span id="notify-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-notify-menu"></span>
 
 <!--			<a href="{{$nav.notifications.0}}" title="{{$nav.notifications.1}}">{{$nav.notifications.1}}</a>
@@ -113,22 +114,28 @@
 			</ul>
 		</li>
 	{{/if}}		
+
+	</ul></li> <!-- sub nav bar -->
 	
 	{{if $nav.login}}<li id="nav-login-link" class="nav-menu {{$nav.login.2}}"><a href="{{$nav.login.0}}" title="{{$nav.login.3}}" >{{$nav.login.1}}</a><li>{{/if}}
 	{{if $nav.alogout}}<li id=nav-alogout-link" class="nav-menu {{$nav}}-alogout.2"><a href="{{$nav.alogout.0}}" title="{{$nav.alogout.3}}" >{{$nav.alogout.1}}</a></li>{{/if}}
 
+	<li><ul class="nav navbar-nav navbar-right"> <!-- sub nav bar -->
+
 	{{if $nav.directory}}
-		<li id="nav-directory-link" class="btn navbar-right nav-menu2 {{$sel.directory}}">
+		<li id="nav-directory-link" class="{{$sel.directory}}">
 			<a class="{{$nav.directory.2}}" href="{{$nav.directory.0}}" title="{{$nav.directory.3}}">{{$nav.directory.1}}</a>
 		</li>
 	{{/if}}
 
 
 	{{if $nav.help}} 
-		<li id="nav-help-link" class="btn navbar-right nav-menu2 {{$sel.help}}">
+		<li id="nav-help-link" class="{{$sel.help}}">
 			<a class="{{$nav.help.2}}" target="friendika-help" href="{{$nav.help.0}}" title="{{$nav.help.3}}" >{{$nav.help.1}}</a>
 		</li>
 	{{/if}}
+
+	</ul></li> <!-- sub nav bar -->
 
 	{{if $nav.apps}}
 		<li id="nav-apps-link" class="nav-menu {{$sel.apps}}">
@@ -141,11 +148,11 @@
 		</li>
 	{{/if}}
 
-		<li id="nav-searchbar">		
+<!-- 		<li id="nav-searchbar">	-->
 			<form method="get" action="search" class="navbar-form navbar-left">
 				<input id="nav-search-text" class="form-control" type="text" value="" placeholder="{{$nav.search.1}}" name="search" title="{{$nav.search.3}}" onclick="this.submit();" />
 			</form>
-		</li>
+<!-- 		</li>-->
 		<div id="nav-search-spinner"></div>
 
 
