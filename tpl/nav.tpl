@@ -51,8 +51,9 @@
 
 	{{if $nav.home}}
 		<li id="nav-home-link" class="{{$sel.home}}">
-			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
-			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span>
+                        <a href="{{$nav.home.0}}"><span class="icon-user" data-toggle="tooltip" title="{{$nav.home.1}}">{{$nav.home.1}}</span></a><span id="home-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-home-menu"></span>
+<!--			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
+			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span> -->
 			<ul id="nav-home-menu" class="menu-popup notify-menus" rel="home">
 				<li id="nav-home-see-all"><a href="{{$nav.home.all.0}}">{{$nav.home.all.1}}</a></li>
 				<li id="nav-home-mark-all"><a href="#" onclick="markRead('home'); return false;">{{$nav.home.mark.1}}</a></li>

@@ -98,9 +98,18 @@ function redstrap3_form(&$a, $font_size, $line_height, $colour, $shadow, $navcol
 	);
 
 	$colour_schemes = array(
-		'redstrap3' => 'redstrap3',		
-		'fancyred' => 'fancyred',						
-		'dark' => 'dark',	
+		'redstrap3' => 'redstrap3',
+                'amelia' => 'amelia',
+                'cerulean' => 'cerulean',
+                'cosmo' => 'cosmo',
+                'cyborg' => 'cyborg',
+                'flatly' => 'flatly',
+                'journal' => 'journal',
+                'readable' => 'readable',
+                'simplex' => 'simplex',
+                'slate' => 'slate',
+                'spacelab' => 'spacelab',
+                'united' => 'united',
 	);
 	$shadows = array(
 		  'true' => 'Yes',
@@ -156,7 +165,7 @@ function redstrap3_form(&$a, $font_size, $line_height, $colour, $shadow, $navcol
 		'$title' => t("Theme settings"),
 		'$font_size' => array('redstrap3_font_size', t('Set font-size for posts and comments'), $font_size, '', $font_sizes),
 		'$line_height' => array('redstrap3_line_height', t('Set line-height for posts and comments'), $line_height, '', $line_heights),
-		'$colour_scheme' => array('redstrap3_colour_scheme', t('Set colour scheme'), $colour_scheme, '', $colour_schemes),	
+		'$colour_scheme' => array('redstrap3_colour_scheme', t('Bootswatch variant'), $colour_scheme, '', $colour_schemes),	
 	 ));}
 	 
 	return $o;
