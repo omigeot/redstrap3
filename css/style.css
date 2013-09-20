@@ -3025,7 +3025,7 @@ ul.menu-popup {
   position: absolute;
   display: none;
   width: 10em;
-  background: #0080FF;
+/*  background: #0080FF;*>
   color: #eec;
   padding: 0px;
   list-style: none;
