@@ -19,5 +19,5 @@
 {{include file="field_input.tpl" field=$radius}}
 
 <div class="settings-submit-wrapper">
-	<input type="submit" value="{{$submit}}" class="settings-submit" name="redstrap3-settings-submit" />
+	<input type="submit" value="{{$submit}}" class="btn btn-default settings-submit" name="redstrap3-settings-submit" />
 </div>
