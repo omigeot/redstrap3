@@ -26,6 +26,11 @@ abbr {
 aside {
 border: none;
 color: #444444;
+margin-top: 10px;
+}
+
+section {
+margin-top: 10px;
 }
 
 /* icons */
