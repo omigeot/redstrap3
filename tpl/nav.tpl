@@ -54,7 +54,7 @@
                         <a href="{{$nav.home.0}}"><span class="icon-user" data-toggle="tooltip" title="{{$nav.home.1}}">{{$nav.home.1}}</span></a><span id="home-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-home-menu"></span>
 <!--			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
 			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span> -->
-			<ul id="nav-home-menu" class="menu-popup notify-menus" rel="home">
+			<ul id="nav-home-menu" class="dropdown-menu menu-popup2 notify-menus" rel="home">
 				<li id="nav-home-see-all"><a href="{{$nav.home.all.0}}">{{$nav.home.all.1}}</a></li>
 				<li id="nav-home-mark-all"><a href="#" onclick="markRead('home'); return false;">{{$nav.home.mark.1}}</a></li>
 				<li class="empty">{{$emptynotifications}}</li>
@@ -67,9 +67,10 @@
 
 	{{if $nav.messages}}
 		<li id="nav-mail-link" class="{{$sel.messages}}">
-			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
-			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span>
-			<ul id="nav-messages-menu" class="menu-popup notify-menus" rel="messages">
+                        <a href="{{$nav.messages.0}}"><span class="icon-envelope-alt" data-toggle="tooltip" title="{{$nav.messages.1}}">{{$nav.messages.1}}</span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-messages-menu id="mail-update" class="dropdown-toggle" data-toggle="dropdown"></span>
+<!--			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
+			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span>-->
+			<ul id="nav-messages-menu" class="dropdown-menu menu-popup2 notify-menus" rel="messages">
 				<li id="nav-messages-see-all"><a href="{{$nav.messages.all.0}}">{{$nav.messages.all.1}}</a></li>
 				<li id="nav-messages-mark-all"><a href="#" onclick="markRead('messages'); return false;">{{$nav.messages.mark.1}}</a></li>
 				<li class="empty">{{$emptynotifications}}</li>
@@ -79,10 +80,10 @@
 
 	{{if $nav.all_events}}
 		<li id="nav-all_events-link" class="nav-menu2 {{$sel.all_events}}">
-                        <a href="{{$nav.all_events.0}}"><span class="icon-calendar" data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
+                        <a href="{{$nav.all_events.0}}"><span class="icon-calendar" data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu" id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
 <!--			<a class="{{$nav.all_events.2}}" href="{{$nav.all_events.0}}" title="{{$nav.all_events.3}}" >{{$nav.all_events.1}}</a>
 			<span id="all_events-update" class="nav-notify fakelink" rel="#nav-all_events-menu"></span> -->
-			<ul id="nav-all_events-menu" class="menu-popup notify-menus" rel="all_events">
+			<ul id="nav-all_events-menu" class="dropdown-menu menu-popup2 notify-menus" rel="all_events">
 				<li id="nav-all_events-see-all"><a href="{{$nav.all_events.all.0}}">{{$nav.all_events.all.1}}</a></li>
 				<li id="nav-all_events-mark-all"><a href="#" onclick="markRead('all_events'); return false;">{{$nav.all_events.mark.1}}</a></li>
 				<li class="empty">{{$emptynotifications}}</li>
@@ -92,9 +93,10 @@
 
 	{{if $nav.intros}}
 		<li id="nav-intros-link" class="nav-menu2 {{$sel.intros}}">
-			<a class="{{$nav.intros.2}}" href="{{$nav.intros.0}}" title="{{$nav.intros.3}}" >{{$nav.intros.1}}</a>
-			<span id="intro-update" class="nav-notify fakelink" rel="#nav-intros-menu"></span>
-			<ul id="nav-intros-menu" class="menu-popup notify-menus" rel="intros">
+                        <a href="{{$nav.intros.0}}"><span class="icon-exchange" data-toggle="tooltip" title="{{$nav.intros.1}}">{{$nav.intros.1}}</span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-intros-menu id="intro-update" class="dropdown-toggle" data-toggle="dropdown"></span>
+<!--			<a class="{{$nav.intros.2}}" href="{{$nav.intros.0}}" title="{{$nav.intros.3}}" >{{$nav.intros.1}}</a>
+			<span id="intro-update" class="nav-notify fakelink" rel="#nav-intros-menu"></span>-->
+			<ul id="nav-intros-menu" class="dropdown-menu menu-popup2 notify-menus" rel="intros">
 				<li id="nav-intros-see-all"><a href="{{$nav.intros.all.0}}">{{$nav.intros.all.1}}</a></li>
 				<li class="empty">{{$emptynotifications}}</li>
 			</ul>
