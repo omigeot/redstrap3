@@ -29,7 +29,7 @@
 
 	{{if $nav.lock}}
 		<li id="nav-rmagic-link" class="nav-menu-icon" >
-			<a class="icon {{$nav.lock.2}}" href="{{$nav.lock.0}}" title="{{$nav.lock.3}}" >{{$nav.lock.1}}</a>
+			<a class="icon-large icon-{{$nav.lock.2}}" href="{{$nav.lock.0}}" title="{{$nav.lock.3}}" >{{$nav.lock.1}}</a>
 		</li>
 	{{/if}}
 
