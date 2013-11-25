@@ -2032,7 +2032,8 @@ aside input[type='text'] {
 
 #nav-searchbar {
 	float: right;
-	margin-top: 3px;
+	margin-top: 7px;
+	margin-bottom: 7px;
 }
 
 #nav-search-spinner {
