@@ -1045,8 +1045,15 @@ footer {
 	width:90%;
 }
 
+#profile-jot-submit-wrapper .btn {
+	display: inline-block;
+}
+
+
+
 #profile-jot-submit {
 	float: left;
+	font-size: 12px;
 }
 #profile-upload-wrapper {
 	float: left;
@@ -1094,29 +1101,6 @@ footer {
 #profile-title-wrapper {
 	float: left;
 	margin-left: 15px;
-}
-
-#profile-jot-perms {
-	float: right;
-	margin-left: 100px;
-	font-weight: bold;
-	font-size: 1.2em;
-	height: auto;
-	width: auto;
-	background-color: #0080FF;
-	border-radius: $radiuspx;
-	border: 2px outset;
-	margin-right: 8px;
-	padding: 4px;
-}
-
-#profile-jot-perms:active {
-    box-shadow: 0 0 0 0;
-}
-
-#profile-jot-perms-end {
-	/*clear: left;*/
-	height: 30px;
 }
 
 #profile-jot-plugin-end{
@@ -1428,26 +1412,6 @@ tr.mceLast {
     border-radius: $radiuspx;
     -moz-border-radius: $radiuspx;
     box-shadow: 4px 4px 3px 0 #444444;
-}
-
-#profile-jot-submit {
-    height: auto;
-    background-color: #0080FF;
-    color: #eeeeec;
-    font-weight: bold;
-    -webkit-border-radius: $radiuspx;
-    -moz-border-radius: $radiuspx;
-    border-radius: $radiuspx;
-    border: 2px outset #222420 !important;
-    margin: 0;
-    float: right;
-    text-shadow: 1px 1px #111;
-    width: auto;
-    box-shadow: 5px 5px 5px #444;
-}
-
-#profile-jot-submit:active {
-    box-shadow: 0 0 0 0;
 }
 
 .settings-widget .selected {

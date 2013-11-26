@@ -28,9 +28,7 @@
 		</div>
 		<div id="profile-jot-text-loading"></div>
 
-<div id="profile-jot-submit-wrapper" class="jothidden">
-	<input type="submit" class="btn btn-primary" id="profile-jot-submit2" name="submit" value="{{$share}}" />
-
+<div id="profile-jot-submit-wrapper" class="jothidden btn-toolbar">
 	<div id="profile-novisitor-wrapper" class="btn-group" style="display: {{$visitor}};" ondragenter="linkdropper(event);" ondragover="linkdropper(event);" ondrop="linkdrop(event);" >
 		<span id="wall-image-upload" class="btn btn-default icon-camera" title="{{$upload}}"></span>
 		<span id="wall-file-upload" class="btn btn-default icon-paper-clip" title="{{$attach}}"></span>
@@ -39,31 +37,38 @@
                 <i id="profile-location" class="btn btn-default icon-globe" title="{{$setloc}}" onclick="jotGetLocation();return false;"></i>
 		<i id="profile-link" class="btn btn-default icon-link" title="{{$weblink}}" ondragenter="return linkdropper(event);" ondragover="return linkdropper(event);" ondrop="linkdrop(event);" onclick="jotGetLink(); return false;"></i>
 	</div> 
-	<div id="profile-nolocation-wrapper" style="display: none;" >
+
+	<div id="profile-nolocation-wrapper" style="display: none;" class="btn-group" >
 		<i id="profile-nolocation" class="btn btn-default icon-circle-blank" title="{{$noloc}}" onclick="jotClearLocation();return false;"></i>
 	</div>
-	<div id="profile-expire-wrapper" style="display: {{$feature_expire}};" >
+	<div id="profile-expire-wrapper" style="display: {{$feature_expire}};" class="btn-group" >
 		<i id="profile-expires" class="btn btn-default icon-eraser" title="{{$expires}}" onclick="jotGetExpiry();return false;"></i>
 	</div> 
-	<div id="profile-encrypt-wrapper" style="display: {{$feature_encrypt}};" >
+	<div id="profile-encrypt-wrapper" style="display: {{$feature_encrypt}};" class="btn-group">
 		<i id="profile-encrypt" class="btn btn-default icon-key" title="{{$encrypt}}" onclick="red_encrypt('{{$cipher}}','#profile-jot-text',$('#profile-jot-text').val());return false;"></i>
 	</div> 
+
+
+        {{if $showacl}}
+        <div id="profile-jot-perms" class="profile-jot-perms btn-group" style="display: {{$pvisit}};" >
+                <a href="#profile-jot-acl-wrapper" id="jot-perms-icon" class="btn btn-primary icon {{$lockstate}}"  title="{{$permset}}" ></a>{{$bang}}
+        </div>
+        {{/if}}
+
+        <div id="profile-jot-perms-end2"></div>
+
+
+	<div class="btn-group">
+        {{if $preview}}<span onclick="preview_post();" class="btn btn-primary icon-eye-open" title="{{$preview}}"></span>{{/if}}
+
+        <input type="submit" class="btn btn-primary" id="profile-jot-submit" name="submit" value="{{$share}}" />
+	</div>
 
 
 	<div id="profile-rotator-wrapper" style="display: {{$visitor}};" >
 		<div id="profile-rotator"></div>
 	</div>  
 
-	{{if $showacl}}
-	<div id="profile-jot-perms" class="profile-jot-perms" style="display: {{$pvisit}};" >
-		<a href="#profile-jot-acl-wrapper" id="jot-perms-icon" class="btn btn-primary icon {{$lockstate}}"  title="{{$permset}}" ></a>{{$bang}}
-	</div>
-	{{/if}}
-
-	{{if $preview}}<span onclick="preview_post();" id="jot-preview-link" class="fakelink"><i class="btn btn-default icon-eye-open" title="{{$preview}}"></i></span>{{/if}}
-
-
-	<div id="profile-jot-perms-end"></div>
 
 
 	<div id="profile-jot-plugin-wrapper">
