@@ -1050,6 +1050,10 @@ footer {
 }
 
 
+#profile-jot-submit-wrapper > .btn-group > .btn {
+	height: 30px;
+}
+
 
 #profile-jot-submit {
 	float: left;
