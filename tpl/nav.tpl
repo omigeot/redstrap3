@@ -2,7 +2,7 @@
 	<div id="site-location">{{$sitelocation}}</div>
 	<!--<div id="banner">{{$banner}}</div>-->
 </header>
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
 	<ul class="navbar-header navbar-nav nav">
 
 	{{if $userinfo}}
@@ -29,7 +29,7 @@
 
 	{{if $nav.lock}}
 		<li id="nav-rmagic-link" class="nav-menu-icon" >
-			<a class="icon-large icon-{{$nav.lock.2}}" href="{{$nav.lock.0}}" title="{{$nav.lock.3}}" >{{$nav.lock.1}}</a>
+			<a class="icon-2x icon-{{$nav.lock.2}}" href="{{$nav.lock.0}}" title="{{$nav.lock.3}}" >{{$nav.lock.1}}</a>
 		</li>
 	{{/if}}
 
