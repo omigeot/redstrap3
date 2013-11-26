@@ -275,7 +275,7 @@ footer {
 	border: 0px;
 	margin: 0px;
 	padding: 8px;
-	height: 20px;
+	height: 30px;
 	width: 530px;
 	margin-bottom: 5px;
 	font-weight: bold;
@@ -1106,7 +1106,6 @@ footer {
 	background-color: #0080FF;
 	border-radius: $radiuspx;
 	border: 2px outset;
-	box-shadow: 5px 5px 5px #666;
 	margin-right: 8px;
 	padding: 4px;
 }
@@ -1353,10 +1352,6 @@ border: 1px #111;
 }
 */
 
-
-iframe#profile-jot-text_ifr {
-width: 100% !important;
-box-shadow: 5px 5px 5px #000 inset !important;}
 
 tr.mceLast {
 
@@ -3432,5 +3427,9 @@ span.notif-when {
 
 .navbar-header dropdown-menu {
 	background-color: white;
+}
+
+#nav-rmagic-link > a {
+	top: -4px;
 }
 
