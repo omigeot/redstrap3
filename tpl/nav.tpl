@@ -50,8 +50,10 @@
 
 	{{if $nav.home}}
 		<li id="nav-home-link" class="{{$sel.home}}">
-			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
-			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span>
+                        <a href="{{$nav.home.0}}"><span data-toggle="tooltip" title="{{$nav.home.1}}">{{$nav.home.1}}</span></a><span id="home-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-home-menu"></span>
+
+<!--			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
+			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span> -->
 			<ul id="nav-home-menu" class="dropdown-menu notify-menus" rel="home">
 				<li id="nav-home-see-all"><a href="{{$nav.home.all.0}}">{{$nav.home.all.1}}</a></li>
 				<li id="nav-home-mark-all"><a href="#" onclick="markRead('home'); return false;">{{$nav.home.mark.1}}</a></li>
@@ -65,8 +67,10 @@
 
 	{{if $nav.messages}}
 		<li id="nav-mail-link" class="{{$sel.messages}}">
-			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
-			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span>
+                        <a href="{{$nav.messages.0}}"><span data-toggle="tooltip" title="{{$nav.messages.1}}">{{$nav.messages.1}}</span></a><span id="mail-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-messages-menu"></span>
+
+<!--			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
+			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span> -->
 			<ul id="nav-messages-menu" class="dropdown-menu notify-menus" rel="messages">
 				<li id="nav-messages-see-all"><a href="{{$nav.messages.all.0}}">{{$nav.messages.all.1}}</a></li>
 				<li id="nav-messages-mark-all"><a href="#" onclick="markRead('messages'); return false;">{{$nav.messages.mark.1}}</a></li>
@@ -90,8 +94,10 @@
 
 	{{if $nav.intros}}
 		<li id="nav-intros-link" class="{{$sel.intros}}">
-			<a class="{{$nav.intros.2}}" href="{{$nav.intros.0}}" title="{{$nav.intros.3}}" >{{$nav.intros.1}}</a>
-			<span id="intro-update" class="nav-notify fakelink" rel="#nav-intros-menu"></span>
+                        <a href="{{$nav.intros.0}}"><span data-toggle="tooltip" title="{{$nav.intros.1}}">{{$nav.intros.1}}</span></a><span id="trino-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-intros-menu"></span>
+
+<!--			<a class="{{$nav.intros.2}}" href="{{$nav.intros.0}}" title="{{$nav.intros.3}}" >{{$nav.intros.1}}</a>
+			<span id="intro-update" class="nav-notify fakelink" rel="#nav-intros-menu"></span> -->
 			<ul id="nav-intros-menu" class="dropdown-menu notify-menus" rel="intros">
 				<li id="nav-intros-see-all"><a href="{{$nav.intros.all.0}}">{{$nav.intros.all.1}}</a></li>
 				<li class="empty">{{$emptynotifications}}</li>
