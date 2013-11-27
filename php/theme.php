@@ -7,6 +7,14 @@ function redstrap3_init(&$a) {
 		$a->set_template_engine('smarty3');
 	head_add_js('jquery.js');
 	head_add_js('bootstrap.min.js');
-	head_add_css('bootstrap.css');
+	// Get the UID of the channel owner
+        $uid = get_theme_uid();
+
+        if($uid)
+            load_pconfig($uid,'redstrap3');
+        $schema = get_pconfig($uid,'redstrap3','schema');
+	if (!$schema)
+		$schema = 'bootstrap.css';
+	head_add_css($schema);
 	head_add_js('redstrap3.js');
 }
