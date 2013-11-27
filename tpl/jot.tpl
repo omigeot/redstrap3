@@ -44,21 +44,23 @@
 	<div id="profile-expire-wrapper" style="display: {{$feature_expire}};" class="btn-group" >
 		<i id="profile-expires" class="btn btn-default icon-eraser" title="{{$expires}}" onclick="jotGetExpiry();return false;"></i>
 	</div> 
+	
 	<div id="profile-encrypt-wrapper" style="display: {{$feature_encrypt}};" class="btn-group">
-		<i id="profile-encrypt" class="btn btn-default icon-key" title="{{$encrypt}}" onclick="red_encrypt('{{$cipher}}','#profile-jot-text',$('#profile-jot-text').val());return false;"></i>
+		<i id="profile-encrypt" class="btn btn-info icon-key" title="{{$encrypt}}" onclick="red_encrypt('{{$cipher}}','#profile-jot-text',$('#profile-jot-text').val());return false;"></i>
 	</div> 
 
 
+
         {{if $showacl}}
-        <div id="profile-jot-perms" class="profile-jot-perms btn-group" style="display: {{$pvisit}};" >
-                <a href="#profile-jot-acl-wrapper" id="jot-perms-icon" class="btn btn-primary icon {{$lockstate}}"  title="{{$permset}}" ></a>{{$bang}}
+        <div id="profile-jot-perms" class="profile-jot-perms btn-group" style="display: {{$pvisit}};">
+                <a href="#profile-jot-acl-wrapper" id="jot-perms-icon" class="btn btn-info {{$lockstate}}"  title="{{$permset}}" ></a>{{$bang}}
         </div>
         {{/if}}
 
         <div id="profile-jot-perms-end2"></div>
 
 
-	<div class="btn-group">
+	<div class="btn-group" id="jot-post-mainbuttons">
         {{if $preview}}<span onclick="preview_post();" class="btn btn-primary icon-eye-open" title="{{$preview}}"></span>{{/if}}
 
         <input type="submit" class="btn btn-primary" id="profile-jot-submit" name="submit" value="{{$share}}" />

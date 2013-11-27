@@ -3401,3 +3401,25 @@ span.notif-when {
 	top: -4px;
 }
 
+#jot-post-mainbuttons, #jot-comment-mainbuttons{
+	float: right;
+}
+
+#jot-comment-mainbuttons .btn {
+	height: 30px;
+	margin-bottom: 50px;
+}
+
+.comment-edit-submit-wrapper {
+	margin-bottom: 40px;
+}
+
+.comment-edit-submit-wrapper > .btn-group {
+	width: 20%;
+	float:right;
+	margin: 10px;
+}
+
+.wall-item-content-wrapper.preview {
+	margin-top: 80px;
+}
