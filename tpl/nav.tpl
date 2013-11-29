@@ -2,7 +2,21 @@
 	<div id="site-location">{{$sitelocation}}</div>
 	<!--<div id="banner">{{$banner}}</div>-->
 </header>
-<nav class="navbar navbar-default" role="navigation">
+<!--
+<nav class="navbar navbar-default narrownav" role="navigation"> 
+        <ul class="navbar-header navbar-nav nav">
+        	<li>
+	                <a href="#" class="icon-reorder icon-large dropdown-toggle" data-toggle="dropdown" rel="#nav-narrow-menu"></a>
+			<div id="nav-narrow-menu" class="dropdown-menu list-group">
+				<a class="list-group-item" href="{{$nav.network.0}}">{{$nav.network.1}}<span class="badge net-update"></span></a>
+                                <a class="list-group-item" href="{{$nav.notifications.0}}">{{$nav.notifications.1}}2<span class="badge notify-update"></span></a>
+
+			</div>
+        	</li>
+	</ul>
+</nav>
+-->
+<nav class="navbar navbar-default largenav" role="navigation">
 	<ul class="navbar-header navbar-nav nav">
 
 	{{if $userinfo}}
@@ -36,7 +50,7 @@
 		
 	{{if $nav.network}}
 		<li id="nav-network-link" class="{{$sel.network}}">
-                        <a href="{{$nav.network.0}}"><span data-toggle="tooltip" title="{{$nav.network.1}}">{{$nav.network.1}}</span></a><span id="net-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-network-menu"></span>
+                        <a href="{{$nav.network.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.network.1}}">{{$nav.network.1}}</span><span class="icon-globe nvb-icon icon-2x"></span></a><span id="net-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-network-menu"></span>
 
 <!--			<a class="{{$nav.network.2}}" href="{{$nav.network.0}}" title="{{$nav.network.3}}" >{{$nav.network.1}}</a>
 			<span id="net-update" class="nav-notify fakelink" rel="#nav-network-menu"></span> -->
@@ -50,7 +64,7 @@
 
 	{{if $nav.home}}
 		<li id="nav-home-link" class="{{$sel.home}}">
-                        <a href="{{$nav.home.0}}"><span data-toggle="tooltip" title="{{$nav.home.1}}">{{$nav.home.1}}</span></a><span id="home-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-home-menu"></span>
+                        <a href="{{$nav.home.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.home.1}}">{{$nav.home.1}}</span><span class="icon-user nvb-icon icon-2x"></span></a><span id="home-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-home-menu"></span>
 
 <!--			<a class="{{$nav.home.2}}" href="{{$nav.home.0}}" title="{{$nav.home.3}}" >{{$nav.home.1}}</a>
 			<span id="home-update" class="nav-notify fakelink" rel="#nav-home-menu"></span> -->
@@ -67,7 +81,7 @@
 
 	{{if $nav.messages}}
 		<li id="nav-mail-link" class="{{$sel.messages}}">
-                        <a href="{{$nav.messages.0}}"><span data-toggle="tooltip" title="{{$nav.messages.1}}">{{$nav.messages.1}}</span></a><span id="mail-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-messages-menu"></span>
+                        <a href="{{$nav.messages.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.messages.1}}">{{$nav.messages.1}}</span><span class="icon-envelope-alt icon-2x nvb-icon"></span></a><span id="mail-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-messages-menu"></span>
 
 <!--			<a class="{{$nav.messages.2}}" href="{{$nav.messages.0}}" title="{{$nav.messages.3}}" >{{$nav.messages.1}}</a>
 			<span id="mail-update" class="nav-notify fakelink" rel="#nav-messages-menu"></span> -->
@@ -81,7 +95,7 @@
 
 	{{if $nav.all_events}}
 		<li id="nav-all_events-link" class="{{$sel.all_events}}">
-                        <a href="{{$nav.all_events.0}}"><span data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
+                        <a href="{{$nav.all_events.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span><span class="nvb-icon icon-calendar icon-2x"></span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
 <!--			<a class="{{$nav.all_events.2}}" href="{{$nav.all_events.0}}" title="{{$nav.all_events.3}}" >{{$nav.all_events.1}}</a>
 			<span id="all_events-update" class="nav-notify fakelink" rel="#nav-all_events-menu"></span> -->
 			<ul id="nav-all_events-menu" class="dropdown-menu notify-menus" rel="all_events">
@@ -94,7 +108,7 @@
 
 	{{if $nav.intros}}
 		<li id="nav-intros-link" class="{{$sel.intros}}">
-                        <a href="{{$nav.intros.0}}"><span data-toggle="tooltip" title="{{$nav.intros.1}}">{{$nav.intros.1}}</span></a><span id="trino-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-intros-menu"></span>
+                        <a href="{{$nav.intros.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.intros.1}}">{{$nav.intros.1}}</span><span class="icon-info icon-2x nvb-icon"></span></a><span id="trino-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-intros-menu"></span>
 
 <!--			<a class="{{$nav.intros.2}}" href="{{$nav.intros.0}}" title="{{$nav.intros.3}}" >{{$nav.intros.1}}</a>
 			<span id="intro-update" class="nav-notify fakelink" rel="#nav-intros-menu"></span> -->
@@ -107,7 +121,7 @@
 		
 	{{if $nav.notifications}}
 		<li id="nav-notify-linkmenu" class="fakelink {{$sel.notifications}}">
-                        <a href="{{$nav.notifications.0}}"><span data-toggle="tooltip" title="{{$nav.notifications.1}}">{{$nav.notifications.1}}</span></a><span id="notify-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-notify-menu"></span>
+                        <a href="{{$nav.notifications.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.notifications.1}}">{{$nav.notifications.1}}</span><span class="icon-bell icon-2x nvb-icon"></span></a><span id="notify-update" href="#" class="badge badge-info notify-badge dropdown-toggle" data-toggle="dropdown" rel="#nav-notify-menu"></span>
 
 <!--			<a href="{{$nav.notifications.0}}" title="{{$nav.notifications.1}}">{{$nav.notifications.1}}</a>
 			<span id="notify-update" class="nav-notify fakelink" rel="#nav-notify-menu"></span>-->

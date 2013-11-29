@@ -1,0 +1,19 @@
+#site-location {
+	display: none;
+}
+
+#narrownav {
+        display: block;
+}
+
+#largenav {
+        display: none;
+}
+
+.nvb-icon {
+	display: inline;
+}
+
+.nvb-text {
+	display: none;
+}

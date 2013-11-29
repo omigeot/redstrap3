@@ -16,5 +16,6 @@ function redstrap3_init(&$a) {
 	if (!$schema)
 		$schema = 'bootstrap.css';
 	head_add_css($schema);
+	head_add_js('dna.min.js');
 	head_add_js('redstrap3.js');
 }

@@ -98,27 +98,7 @@
 
 
 
-// Enforce sane limits for expert mode - otherwise we'll end up with "experts" who think font size is a percentage.
 
-	if(($redstrap3_font_size >= 8.0) && ($redstrap3_font_size <= 20.0)) {
-		echo ".wall-item-content { font-size: ${redstrap3_font_size}px;}\r\n";
-	}
-
-	if(($line_height >= 1.0) && ($line_height <= 2.0)) {
-		echo ".wall-item-content { line-height: $line_height; }\r\n";
-	}	
-
-
-// Minimum value shadows - they shouldn't all be the same size; just get it working, clean up later.
-	if($shadows === "true") {
-		echo "code, blockquote, .wall-item-content-wrapper, .wall-item-content-wrapper.comment, .wall-item-content img, #profile-jot-perms, #profile-jot-submit, .tab, .tab.active, .settings-widget li, .wall-item-photo, .photo, .contact-block-img, .my-comment-photo, #posted-date-selector:hover, .contact-entry-photo img, .profile-match-photo img, #photo-photo img, .directory-photo-img, .photo-album-photo, .photo-top-photo, .group-selected, .nets-selected, .fileas-selected, .categories-selected {
-		box-shadow: 5px 5px 5px #111;}\r\n
-		
-		.tab.active, #jot-title, #jot-category, .comment-edit-text-empty, .comment-edit-text-full, iframe#profile-jot-text_ifr, #profile-jot-text {
-		box-shadow: 5px 5px 5px #666 inset;}\r\n";
-	
-	}
-	
 // This takes quite a lot of code, so we'll keep it in a separate file, and echo the lot.  Devs still don't have to worry about - it's just overrides.
 // Theme devs can play with it without facing scary PHP.
 
