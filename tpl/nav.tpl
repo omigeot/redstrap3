@@ -120,8 +120,8 @@
 		</li>
 	{{/if}}		
 	
-	{{if $nav.login}}<li id="nav-login-link" class="nav-menu {{$nav.login.2}}"><a href="{{$nav.login.0}}" title="{{$nav.login.3}}" >{{$nav.login.1}}</a><li>{{/if}}
-	{{if $nav.alogout}}<li id=nav-alogout-link" class="nav-menu {{$nav}}-alogout.2"><a href="{{$nav.alogout.0}}" title="{{$nav.alogout.3}}" >{{$nav.alogout.1}}</a></li>{{/if}}
+	{{if $nav.login}}<li id="nav-login-link" class="navbar-right {{$nav.login.2}}"><a href="{{$nav.login.0}}" title="{{$nav.login.3}}" >{{$nav.login.1}}</a><li>{{/if}}
+	{{if $nav.alogout}}<li id=nav-alogout-link" class="navvar-right {{$nav}}-alogout.2"><a href="{{$nav.alogout.0}}" title="{{$nav.alogout.3}}" >{{$nav.alogout.1}}</a></li>{{/if}}
 
 	{{if $nav.directory}}
 		<li id="nav-directory-link" class="navbar-right {{$sel.directory}}">
