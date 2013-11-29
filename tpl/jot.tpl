@@ -53,7 +53,7 @@
 
         {{if $showacl}}
         <div id="profile-jot-perms" class="profile-jot-perms btn-group" style="display: {{$pvisit}};">
-                <a href="#profile-jot-acl-wrapper" id="jot-perms-icon" class="btn btn-info {{$lockstate}}"  title="{{$permset}}" ></a>{{$bang}}
+                <a href="#profile-jot-acl-wrapper" id="jot-perms-icon" class="btn btn-info icon-unlock {{$lockstate}}"  title="{{$permset}}" ></a>{{$bang}}
         </div>
         {{/if}}
 
