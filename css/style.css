@@ -957,6 +957,9 @@ footer {
     padding: 5px 10px;
 }    
 
+.wall-item-tools a:hover {
+	text-decoration: none;
+}
 .wall-item-like, .wall-item-dislike {
 	margin-left: 0px;
 	margin-top: 3px;
@@ -3355,4 +3358,7 @@ span.notif-when {
 
 .wall-item-content-wrapper.preview {
 	margin-top: 80px;
+}
+
+.settings-form input, .settings-form select {
 }

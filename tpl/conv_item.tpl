@@ -65,33 +65,33 @@
 		</div>
 		<div class="wall-item-tools" id="wall-item-tools-{{$item.id}}">
 			{{if $item.like}}
-				<a href="#" class="icon like item-tool" title="{{$item.like.0}}" onclick="dolike({{$item.id}},'like'); return false"></a>
+				<a href="#" class="icon-thumbs-up-alt" title="{{$item.like.0}}" onclick="dolike({{$item.id}},'like'); return false"></a>
 			{{/if}}
 			{{if $item.dislike}}
-				<a href="#" class="icon dislike item-tool" title="{{$item.dislike.0}}" onclick="dolike({{$item.id}},'dislike'); return false"></a>
+				<a href="#" class="icon-thumbs-down-alt" title="{{$item.dislike.0}}" onclick="dolike({{$item.id}},'dislike'); return false"></a>
 			{{/if}}
 			{{if $item.share}}
-				<a href="#" class="icon recycle item-tool" title="{{$item.share.0}}" onclick="jotShare({{$item.id}}); return false"></a>
+				<a href="#" class="icon-retweet" title="{{$item.share.0}}" onclick="jotShare({{$item.id}}); return false"></a>
 			{{/if}}
 			{{if $item.plink}}
-				<a href="{{$item.plink.href}}" title="{{$item.plink.title}}" target="external-link" class="icon item-tool remote-link{{$item.sparkle}}"></a>
+				<a href="{{$item.plink.href}}" title="{{$item.plink.title}}" target="external-link" class="icon-share remote-link{{$item.sparkle}}"></a>
 			{{/if}}
 			{{if $item.edpost}}
-				<a class="editpost icon pencil item-tool" href="{{$item.edpost.0}}" title="{{$item.edpost.1}}"></a>
+				<a class="editpost icon-pencil" href="{{$item.edpost.0}}" title="{{$item.edpost.1}}"></a>
 			{{/if}}			 
 			{{if $item.star}}
-			<a href="#" id="starred-{{$item.id}}" onclick="dostar({{$item.id}}); return false;" class="star-item icon item-tool {{$item.star.isstarred}}" title="{{$item.star.toggle}}"></a>
+			<a href="#" id="starred-{{$item.id}}" onclick="dostar({{$item.id}}); return false;" class="star-item icon-star {{$item.star.isstarred}}" title="{{$item.star.toggle}}"></a>
 			{{/if}}
 			{{if $item.tagger}}
-			<a href="#" id="tagger-{{$item.id}}" onclick="itemTag({{$item.id}}); return false;" class="tag-item icon item-tool tagged" title="{{$item.tagger.tagit}}"></a>
+			<a href="#" id="tagger-{{$item.id}}" onclick="itemTag({{$item.id}}); return false;" class="tag-item icon-tag tagged" title="{{$item.tagger.tagit}}"></a>
 			{{/if}}
 			{{if $item.filer}}
-			<a href="#" id="filer-{{$item.id}}" onclick="itemFiler({{$item.id}}); return false;" class="filer-item filer-icon item-tool" title="{{$item.filer}}"></a>
+			<a href="#" id="filer-{{$item.id}}" onclick="itemFiler({{$item.id}}); return false;" class="filer-item icon-folder-open-alt" title="{{$item.filer}}"></a>
 			{{/if}}			
 			<div id="like-rotator-{{$item.id}}" class="like-rotator"></div>
 
 			<div class="wall-item-delete-wrapper" id="wall-item-delete-wrapper-{{$item.id}}" >
-				{{if $item.drop.dropping}}<a href="item/drop/{{$item.id}}" onclick="return confirmDelete();" class="icon drophide" title="{{$item.drop.delete}}" onmouseover="imgbright(this);" onmouseout="imgdull(this);" ></a>{{/if}}
+				{{if $item.drop.dropping}}<a href="item/drop/{{$item.id}}" onclick="return confirmDelete();" class="icon-trash drophide" title="{{$item.drop.delete}}" onmouseover="imgbright(this);" onmouseout="imgdull(this);" ></a>{{/if}}
 			</div>
 				{{if $item.drop.pagedrop}}<input type="checkbox" onclick="checkboxhighlight(this);" title="{{$item.drop.select}}" class="item-select" name="itemselected[]" value="{{$item.id}}" />{{/if}}
 			<div class="wall-item-delete-end"></div>
