@@ -95,7 +95,7 @@
 
 	{{if $nav.all_events}}
 		<li id="nav-all_events-link" class="{{$sel.all_events}}">
-                        <a href="{{$nav.all_events.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span><span class="nvb-icon icon-calendar icon-2x"></span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
+                        <a href="{{$nav.all_events.0}}"><span class="nvb-text" data-toggle="tooltip" title="{{$nav.all_events.1}}">{{$nav.all_events.1}}</span><span class="nvb-icon icon-calendar icon-2x"></span></a><span class="badge badge-info notify-badge dropdown-toggle" rel="#nav-all_events-menu" id="all_events-update" class="dropdown-toggle" data-toggle="dropdown"></span>
 <!--			<a class="{{$nav.all_events.2}}" href="{{$nav.all_events.0}}" title="{{$nav.all_events.3}}" >{{$nav.all_events.1}}</a>
 			<span id="all_events-update" class="nav-notify fakelink" rel="#nav-all_events-menu"></span> -->
 			<ul id="nav-all_events-menu" class="dropdown-menu notify-menus" rel="all_events">
