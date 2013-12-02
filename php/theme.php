@@ -8,7 +8,7 @@ function redstrap3_init(&$a) {
 	head_add_js('jquery.js');
 	head_add_js('bootstrap.min.js');
 	// Get the UID of the channel owner
-        $uid = get_theme_uid();
+        $uid =  $a->profile_uid; 
 
         if($uid)
             load_pconfig($uid,'redstrap3');
