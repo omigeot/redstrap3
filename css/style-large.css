@@ -3035,6 +3035,10 @@ ul.menu-popup {
 	margin: 24px;
 }
 
+#page-spinner2 {
+	text-align: center;
+}
+
 .tabs-end {
 	clear: both;
 }
