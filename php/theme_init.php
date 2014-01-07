@@ -3,7 +3,12 @@
 head_add_css('library/font_awesome/css/font-awesome.min.css');
 
 require_once('view/php/theme_init.php');
+head_remove_css('library/bootstrap/css/bootstrap.min.css');
 head_remove_css('library/bootstrap/css/bootstrap-theme.min.css');
+head_remove_css('view/css/bootstrap-red.css');
+head_remove_js('library/bootstrap/js/bootstrap.min.js');
+
+
 
 // Get the UID of the channel owner
 $uid =  $a->profile_uid;

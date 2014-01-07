@@ -3,7 +3,7 @@
 	<!--<div id="banner">{{$banner}}</div>-->
 </header>
 <!--
-<nav class="navbar navbar-default narrownav" role="navigation"> 
+<nav class="navbar navbar-inverse narrownav" role="navigation"> 
         <ul class="navbar-header navbar-nav nav">
         	<li>
 	                <a href="#" class="icon-reorder icon-large dropdown-toggle" data-toggle="dropdown" rel="#nav-narrow-menu"></a>
